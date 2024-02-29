@@ -73,9 +73,9 @@ def fofa_query(rule, time_select=True):
     print(query_str)
     list_result = []
     # 参数定义
-    #email = 'sfapteam@163.com'
+    #email = ''
     email = ''
-    # key = '39f88ff738929547f2267752a961ab55'
+    # key = ''
     key = ''
     qbase64 = base64.b64encode(query_str.encode('utf-8')).decode('utf-8')
     fields = 'host,title,ip,domain,port,country,city,header,server,as_number,as_organization'
