@@ -17,8 +17,8 @@ stream_handler.setFormatter(formatter)
 
 logger.addHandler(stream_handler)
 
-# zm = zoomeye.ZoomEye(api_key="C12A057e-d6fb-3fb67-b590-21a0d23571e")
-zm = zoomeye.ZoomEye(api_key='5D4EB6FA-225C-6bce2-4ac1-9b1ca25a8d7')
+# zm = zoomeye.ZoomEye(api_key="")
+zm = zoomeye.ZoomEye(api_key='')
 
 # remain_total_quota = zm.resources_info()["quota_info"]["remain_total_quota"]
 # logger.debug("ZoomEye total quota remained: %d" % remain_total_quota)
