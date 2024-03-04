@@ -95,7 +95,7 @@ def fofa_query(rule, time_select=True):
     # 获取结果
     list_result.extend(parse_result(fields, rs['results'], rule, 'fofa'))
     for page_no in range(page + 1 ,int(page_end)+1):
-        api_url = 'http://fofa.so/api/v1/search/all?email=m631141639@sina.com&key={}&fields={}&page={}&size={}&qbase64={}&full=true'.format(email,key,fields,page_no,size,qbase64)
+        api_url = 'http://fofa.so/api/v1/search/all?email=.com&key={}&fields={}&page={}&size={}&qbase64={}&full=true'.format(email,key,fields,page_no,size,qbase64)
         rs = fofa_requests(api_url)
         list_result.extend(parse_result(fields, rs['results'], rule, 'fofa'))
     
